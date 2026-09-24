@@ -135,3 +135,30 @@ header, main, footer { position: relative; z-index: 1; }
   font-size: 0.85rem;
   height: fit-content;
 }
+.panel-body p {
+  color: var(--text-muted);
+  max-width: 62ch;
+  margin: 0 0 16px;
+}
+
+.panel-body p:last-child { margin-bottom: 0; }
+
+/* Projects */
+.projects {
+  padding: 8vh 8vw;
+  border-top: 1px solid var(--navy-line);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+}
+
+.projects > .panel-label { height: fit-content; }
+
+.project-card {
+  position: relative;
+  background: var(--navy-panel);
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.project-card:last-child { margin-bottom: 0; }
